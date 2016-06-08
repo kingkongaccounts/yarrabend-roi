@@ -1,0 +1,46 @@
+.l-grid {
+	@include clearfix;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	&__column {
+		width: 50%;
+		float: left;
+
+		&--30 {
+			width: 30%;
+
+			@include mq($from: tablet, $until: desktop) {
+				width: 40%;
+			}
+
+			@include mq($until: tablet) {
+				width: 100%;
+				float: none;
+			}
+
+		}
+
+		&--70 {
+			width: 70%;
+
+			@include mq($from: tablet, $until: desktop) {
+				width: 60%;
+			}
+
+			@include mq($until: tablet) {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+
+	@include mq($until: tablet) {
+		flex-direction: column-reverse;
+
+		&--reverse {
+			flex-direction: column;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.c-text-block {
+
+	color: $grey;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+
+	&__heading {
+		font-size: 3.33em;
+		line-height: 1;
+		margin: 0 0 0.7em 0;
+		font-family: 'CaslonGraD';
+	}
+
+	&__copy {
+		font-size: 1.08em;
+	}
+
+
+	&--w60 {
+		width: 70%;
+	}
+
+	&--white {
+		color: $white;
+	}
+
+	@include mq($until: tablet) {
+		padding: 2.92em 0;
+	}
+}

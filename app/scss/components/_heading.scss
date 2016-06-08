@@ -1,0 +1,10 @@
+.c-heading {
+	font-family: 'CaslonGraD';
+	font-size: 3.33em;
+	color: $black;
+	margin: 0;
+
+	@include mq($until: tablet) {
+		font-size: 2.50em;
+	}
+}

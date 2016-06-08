@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'BrownStd';
+  src: url('BrownStd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('BrownStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('BrownStd-Bold.woff') format('woff'), /* Modern Browsers */
+       url('BrownStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('BrownStd-Bold.svg#af89fadfea79b3d558091c66d2781cc1') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'BrownStd';
+  src: url('BrownStd-Regular.eot'); /* IE9 Compat Modes */
+  src: url('BrownStd-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('BrownStd-Regular.woff') format('woff'), /* Modern Browsers */
+       url('BrownStd-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('BrownStd-Regular.svg#cb949fd85f8000f3cce3ca82f021b4fa') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'CaslonGraD';
+  src: url('caslongrad.eot'); /* IE9 Compat Modes */
+  src: url('caslongrad.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('caslongrad.woff') format('woff'), /* Modern Browsers */
+       url('caslongrad.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('caslongrad.svg#531a5d0b996a7caadf2318eeb9e846b8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "yarra-bend",
+  "version": "1.0.0",
+  "authors": [
+    ""
+  ],
+  "description": "Cornwell - Cbus - Yarra Bend",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-mq": "^3.2.9"
+  }
+}

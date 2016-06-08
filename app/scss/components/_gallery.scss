@@ -1,0 +1,50 @@
+.c-gallery {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+	&__slide {
+		height: 100%;;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__pager {
+		position: absolute;
+		z-index: 101;
+		top: 50%;
+		right: 3.33em;
+		transform: translateY(-50%);
+
+		@include mq($until: tablet) {
+			left: 0;
+			width: 100%;
+			text-align: center;
+			top: auto;
+			bottom: 1.83em;
+		}
+	}
+
+	&__pager-dot {
+		width: 0.67em;
+		height: 0.67em;
+		display: block;
+		box-sizing: border-box;
+		border: 1px solid $white;
+		border-radius: 50%;
+		display: block;
+		margin: 0.35em 0;
+		cursor: pointer;
+
+		&.is-active {
+			background-color: $white;
+		}
+
+		@include mq($until: tablet) {
+			display: inline-block;
+			margin: 0 .35em;
+		}
+	}
+}

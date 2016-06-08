@@ -1,0 +1,26 @@
+.c-button {
+	height: 3.4em;
+	width: 3.4em;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: .08em solid $white;
+	color: $white;
+	cursor: pointer;
+	overflow: hidden;
+	display: inline-block;
+
+	&__icon {
+		display: block;
+		height: 40%;
+		width: 40%;
+		margin: 30%;
+		box-sizing: border-box;
+		transform: translateY(12%);
+	}
+
+
+	&--black {
+		color: $black;
+		border-color: $black;;
+	}
+}

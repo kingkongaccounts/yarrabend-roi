@@ -1,0 +1,35 @@
+.c-full-image {
+
+	position: relative;
+	width: 100%;
+
+	&:after {
+		content: '';
+		display: block;
+		padding-bottom: 60%;
+	}
+
+	&__inner {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: green;
+	}
+
+	&__content {
+		position: absolute;
+		top: 5.33em;
+		left: 5em;
+		color: $white;
+		width: 30.08em;
+	}
+
+	&__heading {
+		font-family: 'CaslonGraD';
+		font-size: 3.33em;
+		line-height: 0.9;
+		margin: 0 0 0.5em 0;
+	}
+}

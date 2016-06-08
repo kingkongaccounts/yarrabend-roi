@@ -1,0 +1,32 @@
+.p-masterplan {
+	position: relative;
+	width: 100%;
+
+	background-image: url(../images/masterplan.png);
+	background-size: cover;
+
+	&:before {
+		content: '';
+		display: block;
+		padding-bottom: 53%;
+
+		@include mq($until: tablet) {
+			padding-bottom: 100%;
+		}
+	}
+
+	&__heading {
+		position: absolute;
+		top: 4em;
+		left: 5em;
+
+		@include mq($until: tablet) {
+			width: 100%;
+			left: 0;
+			text-align: center;
+			top: 1.92em;
+		}
+	}
+
+
+}

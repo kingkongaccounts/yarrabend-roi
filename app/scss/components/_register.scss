@@ -1,0 +1,13 @@
+.c-register {
+	font-family: 'CaslonGraD';
+	color: $black;
+	font-size: 1.67em;
+	border-bottom: 1px solid $black;
+	line-height: 2;
+	display: inline-block;
+	cursor: pointer;
+
+	&--no-underline {
+		border-bottom: none;
+	}
+}

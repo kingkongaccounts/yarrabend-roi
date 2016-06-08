@@ -1,0 +1,66 @@
+.l-fullimage {
+
+	width: 100%;
+	position: relative;
+	background-size: cover;
+
+	&:before {
+		content: '';
+		display: block;
+		padding-bottom: 53.44%;
+
+		@include mq($from: tablet, $until: desktop) {
+			padding-bottom: 100%;
+		}
+
+		@include mq($until: tablet) {
+			display: none;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		width: 30%;
+		top: 0;
+		right: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		z-index: 2;
+
+		@include mq($from: tablet, $until: wide) {
+			width: 40%;
+		}
+
+		@include mq($until: tablet) {
+			display: block;
+			width: 100%;
+			position: static;
+			background-color: #2E2D2C;
+			text-align: center;
+		}
+	}
+
+	&__picture {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		z-index: 0;
+		height: 100%;
+		width: 100%;
+		display: block;
+		background-size: cover;
+		background-position: center center;
+
+		@include mq($until: tablet) {
+
+			position: static;
+			&:before {
+				content: '';
+				display: block;
+				padding-bottom: 100%;
+			}
+		}
+	}
+}

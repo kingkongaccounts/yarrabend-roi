@@ -1,0 +1,42 @@
+.l-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1001;
+	width: 100%;
+	height: 5em;
+	border-bottom: 1px solid $black;
+	background-color: $white;
+	text-align: center;
+
+	&__left {
+		position: absolute;
+		left: 5em;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@include mq($until: tablet) {
+			left: auto;
+			right: 1.67em
+		}
+	}
+
+	&__center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 10.83em;
+	}
+
+	&__right {
+		position: absolute;
+		right: 5em;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@include mq($until: tablet) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.c-globe-logo {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+
+	&:before {
+		content: '';
+		display: block;
+		padding-bottom: 67.23%;
+	}
+
+	&__globe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-image: url(../images/globe.png);
+		background-position: center center;
+		background-size: 80%;
+		background-repeat: no-repeat;
+		top: 0;
+		left: 0;
+	}
+
+	&__logo {
+		width: 50%;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		transform: translateY(-50%);
+
+		&:before {
+			content: '';
+			display: block;
+			padding-bottom: 15.12%;
+		}
+	}
+
+	&__icon {
+		color: $white;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		display: block;
+	}
+
+	&__tag {
+		font-family: 'CaslonGraD';
+		color: $white;
+		font-size: 2.50em;
+		position: absolute;
+		bottom: 15%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+
+		@include mq($until: tablet) {
+			bottom: 5%;
+			font-size: 1.67em;
+		}
+	}
+
+	@include mq($until: tablet) {
+		width: 150%;
+		margin-left: -25%;
+	}
+}

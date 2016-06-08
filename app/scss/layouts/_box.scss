@@ -1,0 +1,23 @@
+.l-box {
+
+	width: 100%;
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		padding-bottom: 68%;
+
+		@include mq($until: wide) {
+			padding-bottom: 100%;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
