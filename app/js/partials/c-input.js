@@ -6,8 +6,20 @@ jQuery(document).ready(function($) {
 		var $input = $(this).children('.c-input__input');
 		var $label = $(this).children('.c-input__label');
 
-		$input.focus(function(event) {
-			$cont.addClass('hide-label');
+		$input.keyup(function(event) {
+			if($(this).val() == '') {
+				$cont.removeClass('hide-label');
+			} else {
+				$cont.addClass('hide-label');
+			}
+		});
+
+		$input.change(function(event) {
+			if($(this).val() == '') {
+				$cont.removeClass('hide-label');
+			} else {
+				$cont.addClass('hide-label');
+			}
 		});
 
 		$input.blur(function(event) {

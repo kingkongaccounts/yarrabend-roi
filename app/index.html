@@ -349,13 +349,13 @@
 
 				<form action="" class="p-form__form">
 
-
-					<div class="c-logo c-logo--with-tag">
-						<svg class="icon c-logo__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#logo-with-tag"></use>
-						</svg>
+					<div class="p-form__logo">
+						<div class="c-logo c-logo--with-tag">
+							<svg class="icon c-logo__icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#logo-with-tag"></use>
+							</svg>
+						</div>
 					</div>
-
 					<h3 class="p-form__heading">
 						Personal Details
 					</h3>
@@ -381,44 +381,56 @@
 						<div class="p-form__field">
 							<div class="c-input">
 								<label for="phone" class="c-input__label">Phone</label>
-								<input type="number" name="phone" class="c-input__input">
+								<input type="text" name="phone" class="c-input__input">
 							</div>
 						</div>
 
 						<div class="p-form__field p-form__field--full">
 							<div class="c-input">
-								<label for="phone" class="c-input__label">Phone</label>
-								<input type="text" name="phone" class="c-input__input">
+								<label for="address" class="c-input__label">Address</label>
+								<input type="text" name="address" class="c-input__input">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="email" class="c-input__label">Email</label>
-								<input type="email" name="email" class="c-input__input">
+								<label for="city" class="c-input__label">City</label>
+								<input type="text" name="city" class="c-input__input">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="phone" class="c-input__label">Phone</label>
-								<input type="number" name="phone" class="c-input__input">
+								<label for="state" class="c-input__label">State</label>
+								<input type="text" name="state" class="c-input__input">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="email" class="c-input__label">Email</label>
-								<input type="email" name="email" class="c-input__input">
-							</div>
-						</div>
-						<div class="p-form__field">
-							<div class="c-input">
-								<label for="phone" class="c-input__label">Phone</label>
-								<input type="number" name="phone" class="c-input__input">
+								<label for="postcode" class="c-input__label">Postcode</label>
+								<input type="text" name="postcode" class="c-input__input">
 							</div>
 						</div>
 					</div>
 					<h3 class="p-form__heading">
 						Product Details
 					</h3>
+
+					<div class="p-form__fields">
+						<div class="p-form__field p-form__field--full">
+							<div class="c-input">
+								<label for="postcode" class="c-input__label">Product Type</label>
+								<select name="product_type" id="product_type" class="c-input__input">
+									<option value=""></option>
+									<option value="1">Value 1</option>
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<input type="submit" class="p-form__submit" value="Submit">
+					</div>
 				</form>
 
 			</div>

@@ -1,19 +1,11 @@
 .p-form {
-	position: fixed;
-	height: 100%;
+	position: relative;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 2000;
 	background-color: $white;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.3s ease-out;
-
-	body.form-open & {
-		opacity: 1;
-		visibility: visible;
-	}
+	padding: 2em 0;
 
 	&__close {
 		position: absolute;
@@ -22,12 +14,19 @@
 		cursor: pointer;
 		height: 1.25em;
 		height: 1.25em;
+		display: none;
 	}
 
 	&__close-icon {
 		display: block;
 		height: 100%;
 		width: 100%;
+	}
+
+	&__logo {
+		width: 15.67em;
+		position: relative;
+		margin: 0 auto 5.50em auto;
 	}
 
 	&__heading {
@@ -41,6 +40,10 @@
 		position: relative;
 		width: 31.67em;
 		margin: 0 auto;
+
+		@include mq($until: tablet) {
+			width: 90%;
+		}
 	}
 
 	&__field {
@@ -53,6 +56,11 @@
 
 		&:nth-child(2n + 2) {
 			margin-left: calc(4% - 4px);
+
+			@include mq($until: tablet) {
+				margin-left: 0;
+			}
+
 		}
 
 		&:nth-child(2n + 6) {
@@ -61,12 +69,33 @@
 
 		&:nth-child(2n + 7) {
 			margin-left: calc(4% - 4px);
+
+			@include mq($until: tablet) {
+				margin-left: 0;
+			}
+
 		}
 
 		&--full {
 			width: 100%;
 			margin-left: 0px;
 		}
+
+		@include mq($until: tablet) {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	&__submit {
+		font-family: 'CaslonGraD';
+		border: none;
+		background-color: transparent;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		font-size: 2em;
+		margin-top: 3em;
 	}
 
 }
