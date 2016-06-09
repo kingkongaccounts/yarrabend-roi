@@ -1,0 +1,72 @@
+.p-form {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	background-color: $white;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-out;
+
+	body.form-open & {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__close {
+		position: absolute;
+		right: 6.17em;
+		top: 3.17em;
+		cursor: pointer;
+		height: 1.25em;
+		height: 1.25em;
+	}
+
+	&__close-icon {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__heading {
+		font-size: 2em;
+		color: $black;
+		font-family: 'CaslonGraD';
+		text-align: center;
+	}
+
+	&__form {
+		position: relative;
+		width: 31.67em;
+		margin: 0 auto;
+	}
+
+	&__field {
+		width: 48%;
+		height: 2.5em;
+		display: inline-block;
+		margin-left: 0px;
+		margin-bottom: 1em;
+		position: relative;
+
+		&:nth-child(2n + 2) {
+			margin-left: calc(4% - 4px);
+		}
+
+		&:nth-child(2n + 6) {
+			margin-left: 0px;
+		}
+
+		&:nth-child(2n + 7) {
+			margin-left: calc(4% - 4px);
+		}
+
+		&--full {
+			width: 100%;
+			margin-left: 0px;
+		}
+	}
+
+}

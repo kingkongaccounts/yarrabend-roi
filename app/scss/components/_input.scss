@@ -1,0 +1,34 @@
+.c-input {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	font-size: 1.33em;
+
+	&__input {
+		display: block;
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid $black;
+		height: 1.875em;
+		position: relative;
+		z-index: 2;
+		background-color: transparent;
+	}
+
+	&__label {
+		position: absolute;
+		height: 1.875em;
+		line-height: 1.875em;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		display: block;
+		transition: all 0.3s;
+
+		.hide-label & {
+			opacity: 0;
+		}
+	}
+}

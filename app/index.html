@@ -10,7 +10,6 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<!-- Place favicon.ico in the root directory -->
 
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -28,7 +27,7 @@
 		_kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 		</script>
 	</head>
-	<body>
+	<body class="form-open">
 		<!--[if lt IE 9]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -50,11 +49,8 @@
 				</div>
 			</div>
 			<div class="l-header__right">
-				<script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
-				<div class="c-register c-register--no-underline">
-					<a id="Setmore_button_iframe" href="https://my.setmore.com/shortBookingPage/fac656f9-e369-4c81-8c00-b80768f0d2ff">
-						Register Now
-					</a>
+				<div class="c-register c-register--no-underline js-form-open">
+					Register Now
 				</div>
 			</div>
 		</header>
@@ -81,10 +77,8 @@
 				<li class="l-nav__item js-goto-section js-update-on-scroll" data-section="location">
 					Location
 				</li>
-				<li class="l-nav__item l-nav__item--mobile-only">
-					<a id="Setmore_button_iframe" href="https://my.setmore.com/shortBookingPage/fac656f9-e369-4c81-8c00-b80768f0d2ff">
-						Register Now
-					</a>
+				<li class="l-nav__item l-nav__item--mobile-only js-form-open">
+					Register Now
 				</li>
 			</ul>
 		</nav>
@@ -93,7 +87,6 @@
 			<section id="landing">
 				<div class="l-fullscreen">
 					<div class="p-landing">
-
 						<div class="p-landing__content">
 							<div class="c-globe-logo">
 								<div class="c-globe-logo__globe">
@@ -137,10 +130,8 @@
 							<p class="p-about__text">
 								Located only 6km from Melbourne CBD, Yarrabend is a holistic showcase of innovation, creativity & cosmopolitan lifestyle on the banks of the Yarra river.
 							</p>
-							<div class="c-register">
-								<a id="Setmore_button_iframe" href="https://my.setmore.com/shortBookingPage/fac656f9-e369-4c81-8c00-b80768f0d2ff">
-									Register Now
-								</a>
+							<div class="c-register js-form-open">
+								Register Now
 							</div>
 						</div>
 						<footer class="p-about__footer">
@@ -347,6 +338,92 @@
 			</div>
 		</footer>
 
+		<div class="p-form">
+			<div class="p-form__close js-form-close">
+				<svg class="icon p-form__close-icon">
+					<use xlink:href="images/icons.svg#close-x"></use>
+				</svg>
+			</div>
+
+			<div class="p-form__content">
+
+				<form action="" class="p-form__form">
+
+
+					<div class="c-logo c-logo--with-tag">
+						<svg class="icon c-logo__icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#logo-with-tag"></use>
+						</svg>
+					</div>
+
+					<h3 class="p-form__heading">
+						Personal Details
+					</h3>
+					<div class="p-form__fields">
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="first_name" class="c-input__label">First Name</label>
+								<input type="text" name="first_name" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="last_name" class="c-input__label">Last Name</label>
+								<input type="text" name="last_name" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="email" class="c-input__label">Email</label>
+								<input type="email" name="email" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="phone" class="c-input__label">Phone</label>
+								<input type="number" name="phone" class="c-input__input">
+							</div>
+						</div>
+
+						<div class="p-form__field p-form__field--full">
+							<div class="c-input">
+								<label for="phone" class="c-input__label">Phone</label>
+								<input type="text" name="phone" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="email" class="c-input__label">Email</label>
+								<input type="email" name="email" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="phone" class="c-input__label">Phone</label>
+								<input type="number" name="phone" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="email" class="c-input__label">Email</label>
+								<input type="email" name="email" class="c-input__input">
+							</div>
+						</div>
+						<div class="p-form__field">
+							<div class="c-input">
+								<label for="phone" class="c-input__label">Phone</label>
+								<input type="number" name="phone" class="c-input__input">
+							</div>
+						</div>
+					</div>
+					<h3 class="p-form__heading">
+						Product Details
+					</h3>
+				</form>
+
+			</div>
+		</div>
+
 
 
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -354,7 +431,8 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+		<script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

@@ -1,0 +1,82 @@
+[
+  {
+    "address": "Fairfield station",
+    "latitude": -37.779244,
+    "longitude": 145.017058
+  },
+  {
+    "address": "Alphington Station",
+    "latitude": -37.77833,
+    "longitude": 145.031222
+  },
+  {
+    "address": "WestGarth Station",
+    "latitude": -37.780651,
+    "longitude": 144.999351
+  },
+  {
+    "address": "Alphington Park",
+    "latitude": -37.785227,
+    "longitude": 145.029702
+  },
+  {
+    "address": "Darwin Parklands",
+    "latitude": -37.772423,
+    "longitude": 145.034179
+  },
+  {
+    "address": "Fairfield Boathouse",
+    "latitude": -37.800634,
+    "longitude": 145.010207
+  },
+  {
+    "address": "Heide Museum",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "LaTrobe Golf Course",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Yarra Bend Golf Course",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Merry Creek Trail",
+    "latitude": -37.745286,
+    "longitude": 144.981713
+  },
+  {
+    "address": "Wilsons Reserve",
+    "latitude": -37.779311,
+    "longitude": 145.045892
+  },
+  {
+    "address": "Ivanhoe Grammar School",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Alphington Grammar School",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Kew Tennis Courts",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Kew Retail (Riversdale Road)",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  },
+  {
+    "address": "Alphington Retail (Station Street)",
+    "latitude": -37.471308,
+    "longitude": 144.785153
+  }
+]
