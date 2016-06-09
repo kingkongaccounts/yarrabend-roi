@@ -1,14 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="">
 	<head>
-		<meta charset="utf-8">
+				<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Yarra Bend</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<!-- Place favicon.ico in the root directory -->
 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -40,7 +39,7 @@
 
 			<div class="p-form__content">
 
-				<form action="" class="p-form__form">
+				<form action="" class="p-form__form" data-parsley-validate="">
 
 					<div class="p-form__logo">
 						<div class="c-logo c-logo--with-tag">
@@ -56,25 +55,25 @@
 						<div class="p-form__field">
 							<div class="c-input">
 								<label for="first_name" class="c-input__label">First Name</label>
-								<input type="text" name="first_name" class="c-input__input">
+								<input type="text" name="first_name" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
 								<label for="last_name" class="c-input__label">Last Name</label>
-								<input type="text" name="last_name" class="c-input__input">
+								<input type="text" name="last_name" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
 								<label for="email" class="c-input__label">Email</label>
-								<input type="email" name="email" class="c-input__input">
+								<input type="email" name="email" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
 								<label for="phone" class="c-input__label">Phone</label>
-								<input type="text" name="phone" class="c-input__input">
+								<input type="text" name="phone" class="c-input__input" required="">
 							</div>
 						</div>
 
@@ -102,6 +101,9 @@
 								<input type="text" name="postcode" class="c-input__input">
 							</div>
 						</div>
+						<p class="p-form__note">
+							*Mandatory fields
+						</p>
 					</div>
 					<h3 class="p-form__heading">
 						Product Details
@@ -122,22 +124,18 @@
 								</div>
 							</div>
 						</div>
-						<input type="submit" class="p-form__submit" value="Submit">
 					</div>
+					<input type="submit" class="p-form__submit" value="Submit">
 				</form>
 
 			</div>
 		</div>
 
-
-
-		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+				<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-		<script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

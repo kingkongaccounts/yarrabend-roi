@@ -1,0 +1,38 @@
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='https://www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-78544258-1','auto');ga('send','pageview');
+		</script>
+
+		<!-- AD ROLL -->
+		<script type="text/javascript">
+			adroll_adv_id = "K2OQARJTWBCHTA254WBSJ4";
+			adroll_pix_id = "NUUO4YGFXFE2TLHKNSL3YG";
+			/* OPTIONAL: provide email to improve user identification */
+			/* adroll_email = "username@example.com"; */
+			(function () {
+				var _onload = function(){
+					if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+					if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+					var scr = document.createElement("script");
+					var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+					scr.setAttribute('async', 'true');
+					scr.type = "text/javascript";
+					scr.src = host + "/j/roundtrip.js";
+					((document.getElementsByTagName('head') || [null])[0] ||
+						document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+				};
+				if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+				else {window.attachEvent('onload', _onload)}
+			}());
+		</script>

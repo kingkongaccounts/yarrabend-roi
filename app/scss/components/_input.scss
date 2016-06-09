@@ -17,6 +17,10 @@
 		border-radius: 0;
 		appearance: none;
 		outline: none;
+
+		&.parsley-error {
+			border-color: red;
+		}
 	}
 
 	&__label {

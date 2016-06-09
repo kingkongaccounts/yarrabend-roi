@@ -46,6 +46,10 @@
 		}
 	}
 
+	&__fields {
+		padding-bottom: 2em;
+	}
+
 	&__field {
 		width: 48%;
 		height: 2.5em;
@@ -95,7 +99,11 @@
 		position: relative;
 		margin: 0 auto;
 		font-size: 2em;
-		margin-top: 3em;
+	}
+
+	&__note {
+		width: 100%;
+		font-size: 0.75em;
 	}
 
 }

@@ -8,6 +8,7 @@ var postcss = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var fileinclude = require('gulp-file-include');
 
 
 // SVG
@@ -78,7 +79,7 @@ gulp.task('js', function() {
 
 
 gulp.task('js:plugins', function() {
-	gulp.src('app/js/plugins/**/*.js')
+	gulp.src('app/js/plugins/*.js')
 		.pipe(concat('plugins.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
@@ -86,6 +87,7 @@ gulp.task('js:plugins', function() {
 
 gulp.task('html', function() {
 	gulp.src('app/*.html')
+		.pipe(fileinclude({ basepath : 'app/partials' }))
 		.pipe(gulp.dest('dist'));
 });
 
@@ -105,7 +107,7 @@ gulp.task('default', ['html', 'scss', 'js', 'js:plugins', 'svg', 'fonts', 'image
 	gulp.watch('app/js/partials/*.js', ['js']).on('change', browserSync.reload);
 	gulp.watch('app/js/plugins/*.js', ['js:plugins']).on('change', browserSync.reload);
 	gulp.watch('app/icons/*.svg', ['svg']).on('change', browserSync.reload);
-	gulp.watch('app/*.html', ['html']).on('change', browserSync.reload);
+	gulp.watch('app/**/*.html', ['html']).on('change', browserSync.reload);
 	gulp.watch('app/images/*.*', ['images']);
 
 	browserSync.init({
