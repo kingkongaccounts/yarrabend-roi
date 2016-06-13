@@ -25,6 +25,10 @@
 		color: $white;
 	}
 
+	&--pad-top {
+		padding-top: 5.83em;
+	}
+
 	@include mq($until: tablet) {
 		padding: 2.92em 0;
 	}

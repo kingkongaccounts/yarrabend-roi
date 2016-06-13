@@ -1,8 +1,6 @@
 .l-grid {
 	@include clearfix;
 	width: 100%;
-	display: flex;
-	align-items: center;
 
 	&__column {
 		width: 50%;

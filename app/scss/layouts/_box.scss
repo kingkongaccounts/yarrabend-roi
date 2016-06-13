@@ -6,7 +6,7 @@
 	&:after {
 		content: '';
 		display: block;
-		padding-bottom: 68%;
+		padding-bottom: 76%;
 
 		@include mq($until: wide) {
 			padding-bottom: 100%;
