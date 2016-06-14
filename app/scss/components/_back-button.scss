@@ -1,0 +1,23 @@
+.c-back-button {
+	position: absolute;
+	top: 1.5em;
+	left: 2em;
+	z-index: 2;
+
+	font-family: 'CaslonGraD';
+	color: #1D1D1B;
+	font-size: 1.50em;
+	color: #1D1D1B;
+
+	&__icon {
+		display: inline-block;
+		height: 1.58em;
+		width: 1.58em;
+		vertical-align: middle;
+		margin-right: 0.4em;
+	}
+
+	@include mq($until: desktop) {
+		display: none;
+	}
+}

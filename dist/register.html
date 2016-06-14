@@ -26,10 +26,18 @@
 		_kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 		</script>
 	</head>
-	<body class="form-open">
+	<body>
 		<!--[if lt IE 9]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
+
+		<a href="/" title="Back" class="c-back-button">
+			<svg class="icon c-back-button__icon">
+				<use xlink:href="/images/icons.svg#back-button"></use>
+			</svg>
+			Back to homepage
+		</a>
+
 		<div class="p-form">
 			<div class="p-form__close js-form-close">
 				<svg class="icon p-form__close-icon">
@@ -39,7 +47,7 @@
 
 			<div class="p-form__content">
 
-				<form action="" class="p-form__form" data-parsley-validate="">
+				<form action="submit.php" method="POST" class="p-form__form" data-parsley-validate="">
 
 					<div class="p-form__logo">
 						<div class="c-logo c-logo--with-tag">
@@ -54,30 +62,30 @@
 					<div class="p-form__fields">
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="first_name" class="c-input__label">First Name</label>
+								<label for="first_name" class="c-input__label">First Name*</label>
 								<input type="text" name="first_name" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="last_name" class="c-input__label">Last Name</label>
+								<label for="last_name" class="c-input__label">Last Name*</label>
 								<input type="text" name="last_name" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="email" class="c-input__label">Email</label>
+								<label for="email" class="c-input__label">Email*</label>
 								<input type="email" name="email" class="c-input__input" required="">
 							</div>
 						</div>
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="phone" class="c-input__label">Phone</label>
+								<label for="phone" class="c-input__label">Phone*</label>
 								<input type="text" name="phone" class="c-input__input" required="">
 							</div>
 						</div>
 
-						<div class="p-form__field p-form__field--full">
+<!-- 						<div class="p-form__field p-form__field--full">
 							<div class="c-input">
 								<label for="address" class="c-input__label">Address</label>
 								<input type="text" name="address" class="c-input__input">
@@ -94,11 +102,11 @@
 								<label for="state" class="c-input__label">State</label>
 								<input type="text" name="state" class="c-input__input">
 							</div>
-						</div>
+						</div> -->
 						<div class="p-form__field">
 							<div class="c-input">
-								<label for="postcode" class="c-input__label">Postcode</label>
-								<input type="text" name="postcode" class="c-input__input">
+								<label for="postcode" class="c-input__label">Postcode*</label>
+								<input type="text" name="postcode" class="c-input__input" required="">
 							</div>
 						</div>
 						<p class="p-form__note">
@@ -112,10 +120,12 @@
 					<div class="p-form__fields">
 						<div class="p-form__field p-form__field--full">
 							<div class="c-input">
-								<label for="postcode" class="c-input__label">Product Type</label>
-								<select name="product_type" id="product_type" class="c-input__input">
+								<label for="postcode" class="c-input__label">Product Type*</label>
+								<select name="product_type" id="product_type" class="c-input__input" required="">
 									<option value=""></option>
-									<option value="1">Value 1</option>
+									<option value="House & Land Package">House & Land Package</option>
+									<option value="Townhouse">Townhouse</option>
+									<option value="Apartment">Apartment</option>
 								</select>
 								<div class="c-input__arrow">
 									<svg class="icon c-input__arrow-icon">
@@ -126,7 +136,45 @@
 						</div>
 					</div>
 					<input type="submit" class="p-form__submit" value="Submit">
+
+					<p class="p-form__note p-form__note--center">
+						*Collection of personal details is subject to <a href="privacy.pdf" target="_blank">privacy policy</a>.
+					</p>
+
 				</form>
+
+					<div class="c-social">
+						<a href="tel:+61395738320" class="c-social__call">
+							Call 9573 8320
+						</a>
+						<a href="https://www.facebook.com/glenvillcustomhomes/" target="_blank" class="c-social__link">
+							<svg class="icon c-social__icon">
+								<use xlink:href="/images/icons.svg#social-facebook"></use>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/glenvillhomes/" target="_blank" class="c-social__link">
+							<svg class="icon c-social__icon">
+								<use xlink:href="/images/icons.svg#social-instagram"></use>
+							</svg>
+						</a>
+						<a href="terms.pdf" target="_blank" class="c-social__text-link">
+							Terms
+						</a>
+						<a href="privacy.pdf" target="_blank" class="c-social__text-link">
+							Privacy
+						</a>
+						<a href="https://www.consumer.vic.gov.au/duediligencechecklist" target="_blank" class="c-social__text-link">
+							Checklist
+						</a>
+						<span class="c-social__copy">
+							Copyright Glenvill Pty Ltd
+						</span>
+						<div class="c-social__logo">
+							<svg class="icon c-glenvill-logo c-glenvill-logo--center c-glenvill-logo--black">
+								<use xlink:href="/images/icons.svg#logo-glenvill"></use>
+							</svg>
+						</div>
+					</div>
 
 			</div>
 		</div>
@@ -170,7 +218,5 @@
 			}());
 		</script>
 
-		<!-- AUTO PILOT  -->
-		<script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="639f1a5c4b7a42d39d327b6353058747d030e0ab6f9941a98bd61a51886c390c",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};if(!o.noaa){z(b+"aa/"+t+'?'+p,false)};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
 	</body>
 </html>
