@@ -5,10 +5,11 @@ function initMap() {
 	var styles = [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}];
 	var markers = [];
 	var infowindows = [];
+	var bounds = new google.maps.LatLngBounds();
 
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: myLatLng,
-		zoom: 15,
+		zoom: 18,
 		scrollwheel: false,
 		styles : styles,
 		disableDefaultUI: true
@@ -48,10 +49,15 @@ function initMap() {
 						marker_index: i
 					});
 
+					bounds.extend(markers[i].getPosition());
+
 					markers[i].addListener('click', function(e) {
 						infowindows[this.marker_index].open(map, markers[this.marker_index]);
 					});
 				}
+
+
+				map.fitBounds(bounds);
 			}
 		}
 	};

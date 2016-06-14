@@ -31,18 +31,18 @@
   },
   {
     "address": "Heide Museum",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.758259,
+    "longitude": 145.083282
   },
   {
     "address": "LaTrobe Golf Course",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.7863437,
+    "longitude": 145.0351553
   },
   {
     "address": "Yarra Bend Golf Course",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.7971057,
+    "longitude": 145.0090053
   },
   {
     "address": "Merry Creek Trail",
@@ -56,27 +56,27 @@
   },
   {
     "address": "Ivanhoe Grammar School",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.7754877,
+    "longitude": 145.0420033
   },
   {
     "address": "Alphington Grammar School",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.7801667,
+    "longitude": 145.0340823
   },
   {
     "address": "Kew Tennis Courts",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.802864,
+    "longitude": 145.048615
   },
   {
     "address": "Kew Retail (Riversdale Road)",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.831677,
+    "longitude": 145.059481
   },
   {
     "address": "Alphington Retail (Station Street)",
-    "latitude": -37.471308,
-    "longitude": 144.785153
+    "latitude": -37.770122,
+    "longitude": 145.019615
   }
 ]

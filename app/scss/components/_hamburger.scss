@@ -16,27 +16,35 @@
 
 		&:first-child {
 			top: 0;
-			transform: translateY(0);
+			transition: top 0.2s linear 0.2s, transform 0.2s linear 0s;
+		}
 
-			body.menu-open & {
-				top: 50%;
-				transform: translateY(-50%) rotate(45deg);
-			}
-
+		&:nth-child(2) {
+			transition: transform 0.2s linear 0s;
 		}
 
 		&:last-child {
 			top: 100%;
-			transform: translateY(-100%);
+			transition: top 0.2s linear 0.2s, transform 0.2s linear 0s;
+		}
+	}
 
-			body.menu-open & {
-				top: 50%;
-				transform: translateY(-50%) rotate(-45deg);
-			}
+
+	body.menu-open &__line {
+		top: 50%;
+		transform:rotate(45deg);
+
+		&:first-child {
+			transition: top 0.2s linear, transform 0.2s linear 0.2s;
 		}
 
-		body.menu-open & {
-			transform: rotate(-45deg);
+		&:nth-child(2) {
+			transition: transform 0.2s linear 0.2s;
+		}
+
+		&:last-child {
+			transform:rotate(-45deg);
+			transition: top 0.2s linear, transform 0.2s linear 0.2s;
 		}
 	}
 }
