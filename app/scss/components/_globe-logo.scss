@@ -22,10 +22,10 @@
 	}
 
 	&__logo {
-		width: 50%;
+		width: 70%;
 		position: absolute;
 		top: 50%;
-		left: 25%;
+		left: 15%;
 		transform: translateY(-50%);
 
 		&:before {
@@ -50,7 +50,7 @@
 		color: $white;
 		font-size: 2.50em;
 		position: absolute;
-		bottom: 15%;
+		bottom: 5%;
 		left: 0;
 		text-align: center;
 		width: 100%;
@@ -61,8 +61,12 @@
 		}
 	}
 
-	@include mq($until: tablet) {
-		width: 150%;
-		margin-left: -25%;
+	@media screen and (min-aspect-ratio: 1300/800) {
+		& {
+			width: 80%;
+			position: relative;
+			margin: 0 auto;
+		}
 	}
+
 }
