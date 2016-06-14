@@ -3,9 +3,10 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 2000;
-	background-color: $white;
+	background-color: $black;
 	padding: 2em 0;
+	min-height: 100vh;
+	color: $white;
 
 	&__close {
 		position: absolute;
@@ -27,11 +28,12 @@
 		width: 15.67em;
 		position: relative;
 		margin: 0 auto 5.50em auto;
+		color: $white;
 	}
 
 	&__heading {
 		font-size: 2em;
-		color: $black;
+		color: $white;
 		font-family: 'CaslonGraD';
 		text-align: center;
 	}
@@ -99,11 +101,16 @@
 		position: relative;
 		margin: 0 auto;
 		font-size: 2em;
+		color: $white;
 	}
 
 	&__note {
 		width: 100%;
 		font-size: 0.75em;
+
+		&--center {
+			text-align: center;
+		}
 	}
 
 }

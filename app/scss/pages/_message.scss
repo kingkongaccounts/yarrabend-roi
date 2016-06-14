@@ -1,0 +1,101 @@
+// #message {
+// 	position: fixed;
+// 	width: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 0;
+
+// 	&.in-view {
+// 		position: absolute;
+// 		top: 100vh;
+// 		left: 0;
+// 	}
+// }
+
+.p-message {
+	padding: 3em 0;
+	background-color: $black;
+	color: $white;
+	text-align: center;
+	min-height: 100vh;
+
+	&__logo {
+		position: relative;
+		margin: 0 auto 3em auto;
+		width: 200px;
+	}
+
+	&__content {
+		width: 70%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	&__title {
+		display: block;
+		width: 100%;
+		margin-bottom: 3em;
+	}
+
+	&__copy {
+		width: 500px;
+		position: relative;
+		margin: 0 auto 50px auto;
+		font-size: 1.33em;
+		line-height: 1.25;
+
+		&--wide {
+			width: 100%;
+		}
+
+		@include mq($until: tablet) {
+			width: 90%;
+		}
+	}
+
+	&__em-text {
+		font-family: 'CaslonGraD';
+		font-size: 2em;
+
+		@include mq($until: tablet) {
+			font-size: 1.5em;
+		}
+	}
+
+	&__gold-text {
+		font-size: 1.83em;
+		font-family: 'CaslonGraD';
+		color: #8B6E4A;
+
+		@include mq($until: tablet) {
+			font-size: 1.2em;
+		}
+
+	}
+
+	&__badge-copy {
+		width: 720px;
+		padding: 0 190px;
+		position: relative;
+		margin: 0 auto;
+		box-sizing: border-box;
+		background-image: url(../images/badge.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+
+		@include mq($until: desktop) {
+			width: 100%;
+			padding: 0 10%;
+			background-image: none;
+		}
+	}
+
+	&__scroll-down {
+		display: none;
+
+		@include mq($until: tablet) {
+			display: block;
+		}
+	}
+
+}

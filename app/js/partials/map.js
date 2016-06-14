@@ -10,7 +10,8 @@ function initMap() {
 		center: myLatLng,
 		zoom: 15,
 		scrollwheel: false,
-		styles : styles
+		styles : styles,
+		disableDefaultUI: true
 	});
 
 	var marker = new google.maps.Marker({

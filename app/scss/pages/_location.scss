@@ -25,4 +25,23 @@
 		width: 100%;
 		background-color: #C1C1C1;
 	}
+
+	&__heading {
+		font-size: 3.75em;
+		color: $grey;
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		list-style: none;
+		z-index: 100;
+		font-family: 'CaslonGraD';
+		margin: 0;
+
+		@include mq($until: tablet) {
+			font-size: 2.5em;
+			text-align: center;
+			width: 100%;
+			left: 0;
+		}
+	}
 }

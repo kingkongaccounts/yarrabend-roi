@@ -20,14 +20,13 @@
 
 	&__content {
 		position: absolute;
-		width: 30%;
-		top: 0;
-		right: 0;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		width: 26%;
+		bottom: 0;
+		right: 4%;
+		height: auto;
 		z-index: 2;
+		padding-bottom: 4%;
+		color: $white;
 
 		@include mq($from: tablet, $until: wide) {
 			width: 40%;
@@ -37,8 +36,15 @@
 			display: block;
 			width: 100%;
 			position: static;
-			background-color: #2E2D2C;
+			background-color: $black;
 			text-align: center;
+			padding: 10%;
+			box-sizing: border-box;
+
+			&--mobile-white {
+				background-color: $white;
+				color: $black;
+			}
 		}
 	}
 
@@ -62,5 +68,16 @@
 				padding-bottom: 100%;
 			}
 		}
+	}
+
+	&__heading {
+		font-size: 3.33em;
+		line-height: 1;
+		margin: 0 0 0.7em 0;
+		font-family: 'CaslonGraD';
+	}
+
+	&__copy {
+		font-size: 1.08em;
 	}
 }

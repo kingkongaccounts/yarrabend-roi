@@ -10,15 +10,26 @@
 		line-height: 1;
 		margin: 0 0 0.7em 0;
 		font-family: 'CaslonGraD';
+
+		@include mq($until: tablet) {
+			text-align: center;
+		}
 	}
 
 	&__copy {
 		font-size: 1.08em;
+		@include mq($until: tablet) {
+			text-align: center;
+		}
 	}
 
 
 	&--w60 {
 		width: 70%;
+
+		@include mq($until: tablet) {
+			width: 80%;
+		}
 	}
 
 	&--white {

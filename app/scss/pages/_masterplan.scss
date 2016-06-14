@@ -1,32 +1,71 @@
 .p-masterplan {
 	position: relative;
 	width: 100%;
+	color: $white;
 
-	background-image: url(../images/masterplan.png);
-	background-size: cover;
+	@include mq($until: tablet) {
+		color: $black;
+	}
 
 	&:before {
 		content: '';
 		display: block;
-		padding-bottom: 53%;
+		padding-bottom: 55%;
 
 		@include mq($until: tablet) {
-			padding-bottom: 100%;
+			display: none;
+		}
+	}
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-image: url(../images/masterplan-image.jpg);
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		@include mq($until: tablet) {
+			position: relative;
+
+			&:after {
+				content: '';
+				display: block;
+				padding-bottom: 100%;
+			}
+		}
+	}
+
+	&__content {
+		position: absolute;;
+		z-index: 2;
+		top: 0;
+		left: 4.8%;
+		width: 22.6%;
+		padding-top: 5%;
+		font-size: 1vw;
+		z-index: 2;
+
+		@include mq($until: tablet) {
+			position: relative;
+			top: auto;
+			left: auto;
+			font-size: 1em;
+			width: 80%;
+			margin: 0 auto;
+			padding: 10% 0;
+			text-align: center;
 		}
 	}
 
 	&__heading {
-		position: absolute;
-		top: 4em;
-		left: 5em;
-
-		@include mq($until: tablet) {
-			width: 100%;
-			left: 0;
-			text-align: center;
-			top: 1.92em;
-		}
+		font-size: 3.33em;
+		line-height: 1;
+		margin: 0 0 0.5em 0;
+		font-family: 'CaslonGraD';
 	}
-
 
 }

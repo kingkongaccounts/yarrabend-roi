@@ -4,6 +4,10 @@
 	padding-bottom: 3.33em;
 	text-align: center;
 
+	@include mq($until: tablet) {
+		display: none;
+	}
+
 	&__call {
 		display: block;
 		font-size: 1.33em;
@@ -58,6 +62,7 @@
 
 	&__logo {
 		margin-top: 2em;
+		display: none;
 		@include mq($from: tablet) {
 			margin-top: 0;
 			float: right;

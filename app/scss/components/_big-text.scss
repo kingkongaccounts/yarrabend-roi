@@ -1,0 +1,30 @@
+.c-big-text {
+	background-color: $black;
+	color: $white;
+
+	padding: 6.25em 0;
+
+	&__image {
+		width: 85%;
+		position: relative;
+		display: block;
+		margin: 0 auto 5.33em auto;
+	}
+
+
+	&__copy {
+		width: 550px;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.50em;
+		line-height: 1.22;
+
+		@include mq($until: tablet) {
+			width: 80%;
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+
+}

@@ -7,4 +7,9 @@
 	&--black {
 		color: $black;
 	}
+
+	&--inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
 }

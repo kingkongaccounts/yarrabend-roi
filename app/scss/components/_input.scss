@@ -4,12 +4,13 @@
 	display: block;
 	position: relative;
 	font-size: 1.33em;
+	color: $white;
 
 	&__input {
 		display: block;
 		width: 100%;
 		border: 0;
-		border-bottom: 1px solid $black;
+		border-bottom: 1px solid $white;
 		height: 1.875em;
 		position: relative;
 		z-index: 2;
