@@ -10,4 +10,8 @@
 	&--no-underline {
 		border-bottom: none;
 	}
+
+	&--white {
+		color: $white;
+	}
 }
