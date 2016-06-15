@@ -10,7 +10,7 @@
 	&:before {
 		content: '';
 		display: block;
-		padding-bottom: 55%;
+		padding-bottom: 57%;
 
 		@include mq($until: tablet) {
 			display: none;
