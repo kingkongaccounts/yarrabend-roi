@@ -5,6 +5,16 @@ body {
 	line-height: 1.2;
 }
 
+body > main {
+	padding-top: 100vh;
+}
+
+main > section {
+	background-color: $white;
+	position: relative;
+	z-index: 2;
+}
+
 svg {
 	fill: currentColor;
 }

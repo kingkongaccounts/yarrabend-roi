@@ -46,6 +46,10 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 
+		&--smaller {
+			width: 65%;
+		}
+
 		@include mq($until: desktop) {
 			position: relative;
 			width: 100%;
@@ -65,6 +69,10 @@
 		font-size: 3.46em;
 		line-height: .95;
 		margin: 0 0 0.7em 0;
+
+		&--smaller {
+			font-size: 2.5em;
+		}
 	}
 
 	&__copy {
@@ -75,6 +83,10 @@
 		box-sizing: border-box;
 		padding: 4%;
 		font-size: 1.08em;
+
+		&--larger {
+			width: 35%;
+		}
 
 		@include mq($until: desktop) {
 			position: relative;
@@ -113,6 +125,10 @@
 		left: 70%;
 		margin-left: -3.33em;
 		transform: translateY(-50%);
+
+		&--alt {
+			left: 65%;
+		}
 
 		@include mq($until: tablet) {
 			left: 0;
