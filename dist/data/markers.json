@@ -125,8 +125,13 @@
     "longitude": 145.125918
   },
   {
-    "address": "Glenferrie Rd, Hawthorne",
+    "address": "Glenferrie Rd, Hawthorn",
     "latitude": -37.825409,
     "longitude": 145.034832
+  },
+  {
+    "address": "Melbourne",
+    "latitude": -37.813321,
+    "longitude": 144.966477
   }
 ]
