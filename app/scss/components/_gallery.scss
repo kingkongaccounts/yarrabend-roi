@@ -47,4 +47,13 @@
 			margin: 0 .35em;
 		}
 	}
+
+	&__note {
+		position: absolute;
+		bottom: 1em;
+		left: 1em;
+		font-size: 1em;
+		color: $black;
+		z-index: 101;
+	}
 }

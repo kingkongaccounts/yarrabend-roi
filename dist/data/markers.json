@@ -78,5 +78,55 @@
     "address": "Alphington Retail (Station Street)",
     "latitude": -37.770122,
     "longitude": 145.019615
+  },
+  {
+    "address": "Kew High St",
+    "latitude": -37.804533,
+    "longitude": 145.037048
+  },
+  {
+    "address": "Alphington Train Station",
+    "latitude": -37.778330,
+    "longitude": 145.031222
+  },
+  {
+    "address": "Alphington Grammer",
+    "latitude": -37.818793,
+    "longitude": 145.06041
+  },
+  {
+    "address": "Alphington Primary",
+    "latitude": -37.778164,
+    "longitude": 145.021414
+  },
+  {
+    "address": "Xavier College",
+    "latitude": -37.813858,
+    "longitude": 145.031105
+  },
+  {
+    "address": "Austin Hospital ",
+    "latitude": -37.755568,
+    "longitude": 145.061213
+  },
+  {
+    "address": "Melbourne Uni",
+    "latitude": -37.796717,
+    "longitude": 144.961231
+  },
+  {
+    "address": "Latrobe Golf Course",
+    "latitude": -37.787385,
+    "longitude": 145.036935
+  },
+  {
+    "address": "Westfield Doncaster",
+    "latitude": -37.785407,
+    "longitude": 145.125918
+  },
+  {
+    "address": "Glenferrie Rd, Hawthorne",
+    "latitude": -37.825409,
+    "longitude": 145.034832
   }
 ]
