@@ -7,10 +7,6 @@
 	display: inline-block;
 	cursor: pointer;
 
-	&--no-underline {
-		border-bottom: none;
-	}
-
 	&--white {
 		color: $white;
 		border-bottom: 1px solid $white;
@@ -18,5 +14,16 @@
 
 	&--large {
 		font-size: 2.67em;
+	}
+
+
+	&--no-underline {
+		border-bottom: none;
+	}
+
+	&__sub-text {
+		font-size: 0.5em;
+		display: block;
+		margin-top: -1em;
 	}
 }
