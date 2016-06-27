@@ -3,6 +3,9 @@ body {
 	font-family: 'BrownStd';
 	font-size: 12px;
 	line-height: 1.2;
+	@include mq($until: tablet) {
+		font-size: 14px;
+	}
 }
 
 body > main {

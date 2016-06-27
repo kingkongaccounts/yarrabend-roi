@@ -12,7 +12,8 @@ function initMap() {
 		zoom: 18,
 		scrollwheel: false,
 		styles : styles,
-		disableDefaultUI: true
+		disableDefaultUI: true,
+		draggable: false
 	});
 
 	var marker = new google.maps.Marker({
