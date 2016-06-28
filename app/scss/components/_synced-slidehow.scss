@@ -31,6 +31,8 @@
 		height: 100%;
 		width: 100%;
 		position: absolute;
+		top: 0;
+		left: 0;
 
 		@include mq($until: desktop) {
 			height: auto;
@@ -73,6 +75,10 @@
 		&--smaller {
 			font-size: 2.5em;
 		}
+
+		&--break-word {
+			word-break: break-all;
+		}
 	}
 
 	&__copy {
@@ -83,16 +89,21 @@
 		box-sizing: border-box;
 		padding: 4%;
 		font-size: 1.08em;
+		min-height: 28.57em;
 
 		&--larger {
 			width: 35%;
 		}
 
 		@include mq($until: desktop) {
-			position: relative;
+			position: static;
 			width: 100%;
 			padding: 10%;
 			text-align: center;
+		}
+
+		&--longer {
+			min-height: 42.86em;
 		}
 	}
 
