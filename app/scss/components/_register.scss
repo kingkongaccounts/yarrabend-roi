@@ -6,6 +6,9 @@
 	line-height: 2;
 	display: inline-block;
 	cursor: pointer;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
 
 	&--white {
 		color: $white;
