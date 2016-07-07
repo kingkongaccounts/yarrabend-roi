@@ -69,6 +69,10 @@
 		top: 12%;
 		left: 12%;
 		z-index: 4;
+
+		html.no-video & {
+			display: none;
+		}
 	}
 
 	@media screen and (min-aspect-ratio: 1300/800) {
