@@ -32,7 +32,7 @@
 	&__right {
 		position: absolute;
 		right: 4em;
-		top: 50%;
+		top: 42%;
 		transform: translateY(-50%);
 
 		@include mq($until: tablet) {
