@@ -64,10 +64,10 @@
 
 	&__video {
 		position: absolute;
-		height: 76%;
-		width: 76%;
-		top: 12%;
-		left: 12%;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
 		z-index: 4;
 
 		html.no-video & {
