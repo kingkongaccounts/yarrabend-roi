@@ -55,6 +55,7 @@
 		left: 0;
 		text-align: center;
 		width: 100%;
+		z-index: 10;
 
 		@include mq($until: tablet) {
 			bottom: 5%;
