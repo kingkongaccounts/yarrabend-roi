@@ -14,7 +14,6 @@ var fileinclude = require('gulp-file-include');
 // SVG
 svgmin = require('gulp-svgmin');
 svgstore = require('gulp-svgstore');
-svg2png = require('gulp-svg2png');
 rsp = require('remove-svg-properties').stream;
 
 
@@ -58,10 +57,6 @@ gulp.task('svg', function() {
 		.pipe(svgstore({ inlineSvg: true }))
 		.pipe(gulp.dest('dist/images'));
 
-	// create fallback
-	gulp.src('app/icons/*.svg')
-		.pipe(svg2png())
-		.pipe(gulp.dest('dist/images/fallback'));
 });
 
 
