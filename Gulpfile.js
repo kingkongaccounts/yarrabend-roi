@@ -23,7 +23,6 @@ var browserSync = require('browser-sync').create();
 // Post CSS Plugins
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
-var comments = require('postcss-discard-comments');
 
 
 // Post CSS Processors

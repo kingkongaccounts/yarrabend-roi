@@ -24,7 +24,6 @@
     "gulp-svgmin": "^1.2.2",
     "gulp-svgstore": "^6.0.0",
     "gulp-uglify": "^1.5.3",
-    "postcss-discard-comments": "^2.0.4",
     "remove-svg-properties": "^0.3.2"
   }
 }
