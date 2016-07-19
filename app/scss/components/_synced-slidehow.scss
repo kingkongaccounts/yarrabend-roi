@@ -172,4 +172,12 @@
 		}
 	}
 
+	&__caption {
+		position: absolute;
+		font-size: 1em;
+		z-index: 2;
+		bottom: 1.5em;
+		left: 1.5em;
+	}
+
 }
