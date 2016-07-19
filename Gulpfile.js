@@ -27,8 +27,7 @@ var cssnano = require('cssnano');
 
 // Post CSS Processors
 var processors = [
-	comments({removeAll: true}),
-	autoprefixer({browsers: ['last 3 version']}),
+	autoprefixer({browsers: ['last 6 version']}),
 	cssnano({ zindex: false })
 ];
 
