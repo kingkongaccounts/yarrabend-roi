@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en-AU">
+	<head>
+		@@include('head.html', {"title" : " - Park Prencinct Downloads"})
+	</head>
+	<body class="form-open">
+		<!--[if lt IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="p-form">
+			<div class="p-form__content">
+				<form action="submit.php" method="POST" class="p-form__form" data-parsley-validate="">
+					<div class="p-form__logo">
+						<div class="c-logo c-logo--with-tag">
+							<svg class="icon c-logo__icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#logo-with-tag"></use>
+							</svg>
+						</div>
+					</div>
+
+				</form>
+				<div class="c-privacy">
+						<h3 class="p-form__heading">
+							Park Prencinct Downloads
+						</h3>
+						<ol style="font-size: 1.5em;">
+							<li><a href="#">Park Precinct Numbered & Named Lot Plan </a></li>
+							<li><a href="#">The EOI terms</a></li>
+							<li><a href="#">Standard due diligence checklist</a></li>
+							<li><a href="#">Pro-forma power of attorney for purchasers</a></li>
+							<li><a href="#">Draft land contract</a></li>
+							<li><a href="#">Draft build contract</a></li>
+
+						</ol>
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+		@@include('footer-scripts.html')
+
+		<!-- AUTO PILOT  -->
+		<script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="639f1a5c4b7a42d39d327b6353058747d030e0ab6f9941a98bd61a51886c390c",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};if(!o.noaa){z(b+"aa/"+t+'?'+p,false)};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+	</body>
+</html>
