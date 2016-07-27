@@ -1,0 +1,133 @@
+body.eoi {
+	background-color: $black;
+}
+
+.p-eoi-form {
+	margin: 0;
+	padding: 0;
+	background-color: $black;
+	color: #fff;
+	top: 0;
+
+	&__logo {
+		width: 200px;
+		position: relative;
+		margin: 50px auto;
+	}
+
+	&__form {
+		width: 700px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	&__heading {
+		font-family: 'CaslonGraD';
+		font-weight: 700;
+		font-size: 3em;
+		text-align: center;
+	}
+
+	&__sub-heading {
+		font-family: 'CaslonGraD';
+		font-weight: 700;
+		font-size: 2.3em;
+		text-align: left;
+		display: block;
+		margin-bottom: 0;
+	}
+
+	&__section-heading {
+		font-family: 'CaslonGraD';
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
+		margin-bottom: 0.5em;
+	}
+
+	&__section {
+		width: 100%;
+		@include clearfix;
+
+		&--hidden {
+			display: none;
+			#applicant2:checked ~ & {
+				display: block;
+			}
+		}
+	}
+
+
+
+	&__column {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding-right: 1em;
+		@include clearfix;
+
+		& + & {
+			padding-right: 0;
+			padding-left: 1em;
+		}
+	}
+
+
+	&__field {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+		height: 3em;
+		margin-bottom: 0.5em;
+
+		&--one-third {
+			width: 33.3332%;
+			padding-right: 1em;
+		}
+		&--two-third {
+			width: 66.6665%;
+			padding-left: 1em;
+		}
+
+	}
+
+	#applicant2 {
+		opacity: 0;
+		position: absolute;
+	}
+
+	&__button {
+		clear: both;
+		color: #fff;
+		font-size: 1em;
+		text-decoration: underline;
+		padding: 1em 0 2em 0;
+		display: block;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+		}
+		#applicant2:checked + & {
+			display: none;
+		}
+	}
+
+
+
+	&__submit {
+		text-align: center;
+		margin-top: 3em;
+	}
+
+	&__notes {
+		margin: 3em auto;
+		padding-top: 2em;
+		border-top: 1px solid white;
+		text-align: center;
+		font-size: 0.8em;
+		span {
+			font-size: 1.2em;
+		}
+	}
+}
+

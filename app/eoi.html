@@ -1,0 +1,495 @@
+<!doctype html>
+<html class="no-js" lang="en-AU">
+	<head>
+		@@include('head.html', {"title" : " - Expression of interest"})
+	</head>
+	<body class="eoi">
+		<!--[if lt IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="p-eoi-form">
+			<div class="p-eoi-form__logo">
+				<div class="c-logo c-logo--with-tag">
+					<svg class="icon c-logo__icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#logo-with-tag"></use>
+					</svg>
+				</div>
+			</div>
+			<form class="p-eoi-form__form" action="eoi-submit.php" method="post">
+				<div class="p-eoi-form__section">
+					<h3 class="p-eoi-form__heading">
+						Expression of interest.
+					</h3>
+
+					<h4 class="p-eoi-form__sub-heading">
+						Contact Details
+					</h4>
+				</div>
+				<div class="p-eoi-form__section p-eoi-form__section--applicant">
+					<h5 class="p-eoi-form__section-heading">
+						Applicant 1
+					</h5>
+					<div class="p-eoi-form__column">
+						<div class="p-eoi-form__field p-eoi-form__field--one-third">
+							<div class="c-input">
+								<label for="applicant1_title" class="c-input__label">Title</label>
+								<select name="applicant1_title" id="applicant1_title" class="c-input__input" required="">
+									@@include('eoi-titles.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--two-third">
+							<div class="c-input">
+								<label for="applicant1_first_name" class="c-input__label">First Name</label>
+								<input type="text" name="applicant1_first_name" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_last_name" class="c-input__label">Last Name</label>
+								<input type="text" name="applicant1_last_name" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_email" class="c-input__label">Email</label>
+								<input type="email" name="applicant1_email" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_phone" class="c-input__label">Phone</label>
+								<input type="text" name="applicant1_phone" class="c-input__input" required="">
+							</div>
+						</div>
+					</div><!-- end column -->
+					<div class="p-eoi-form__column">
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_street" class="c-input__label">Street Address</label>
+								<input type="text" name="applicant1_street" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_city" class="c-input__label">Suburb/City</label>
+								<input type="text" name="applicant1_city" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--one-third">
+							<div class="c-input">
+								<label for="applicant1_postcode" class="c-input__label">Postcode</label>
+								<input type="text" name="applicant1_postcode" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--two-third">
+							<div class="c-input">
+								<label for="applicant1_state" class="c-input__label">State</label>
+								<select name="applicant1_state" id="applicant1_state" class="c-input__input" required="">
+									@@include('eoi-states.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant1_country" class="c-input__label">Country</label>
+								<select name="applicant1_country" id="applicant1_country" class="c-input__input" required="">
+									@@include('eoi-countries.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div><!-- end column -->
+				</div><!-- end section -->
+								
+				<input type="checkbox" name="applicant2" id="applicant2" />
+				<label class="p-eoi-form__button" for="applicant2">Add Applicant</label>
+
+				<div class="p-eoi-form__section p-eoi-form__section--hidden">
+					<h5 class="p-eoi-form__section-heading">
+						Applicant 2
+					</h5>
+					<div class="p-eoi-form__column">
+						<div class="p-eoi-form__field p-eoi-form__field--one-third">
+							<div class="c-input">
+								<label for="applicant2_title" class="c-input__label">Title</label>
+								<select name="applicant1_title" id="applicant2_title" class="c-input__input" required="">
+									@@include('eoi-titles.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--two-third">
+							<div class="c-input">
+								<label for="applicant2_first_name" class="c-input__label">First Name</label>
+								<input type="text" name="applicant2_first_name" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_last_name" class="c-input__label">Last Name</label>
+								<input type="text" name="applicant2_last_name" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_email" class="c-input__label">Email</label>
+								<input type="email" name="applicant2_email" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_phone" class="c-input__label">Phone</label>
+								<input type="text" name="applicant2_phone" class="c-input__input" required="">
+							</div>
+						</div>
+					</div><!-- end column -->
+					<div class="p-eoi-form__column">
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_street" class="c-input__label">Street Address</label>
+								<input type="text" name="applicant2_street" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_city" class="c-input__label">Suburb/City</label>
+								<input type="text" name="applicant2_city" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--one-third">
+							<div class="c-input">
+								<label for="applicant2_postcode" class="c-input__label">Postcode</label>
+								<input type="text" name="applicant2_postcode" class="c-input__input" required="">
+							</div>
+						</div>
+						<div class="p-eoi-form__field p-eoi-form__field--two-third">
+							<div class="c-input">
+								<label for="applicant2_state" class="c-input__label">State</label>
+								<select name="applicant2_state" id="applicant2_state" class="c-input__input" required="">
+									@@include('eoi-states.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="applicant2_country" class="c-input__label">Country</label>
+								<select name="applicant2_country" id="applicant2_country" class="c-input__input" required="">
+									@@include('eoi-countries.html')
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div><!-- end column -->
+				</div><!-- end section -->
+
+
+				<div class="p-eoi-form__section">
+					<div class="p-eoi-form__column">
+						<h5 class="p-eoi-form__section-heading">
+							Identification
+						</h5>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="identification" class="c-input__label">Passport number/drivers license number</label>
+								<input type="text" name="identification" class="c-input__input" required="">
+							</div>
+						</div>
+					</div><!-- end column -->
+					<div class="p-eoi-form__column">
+						<h5 class="p-eoi-form__section-heading">
+							Product of Interest
+						</h5>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="product1" class="c-input__label">Select product</label>
+								<select name="product1" id="product1" class="c-input__input" required="">
+									<option value=""></option>
+									<option value="1">Lot 1 Aster</option>
+									<option value="8">Lot 8 Aster</option>
+									<option value="18">Lot 18 Aster</option>
+									<option value="19">Lot 19 Aster</option>
+									<option value="29">Lot 29 Aster</option>
+									<option value="36">Lot 36 Aster</option>
+									<option value="37">Lot 37 Astilbe</option>
+									<option value="44">Lot 44 Astilbe</option>
+									<option value="5">Lot 5 Aurea</option>
+									<option value="12">Lot 12 Aurea</option>
+									<option value="13">Lot 13 Aurea</option>
+									<option value="24">Lot 24 Aurea</option>
+									<option value="25">Lot 25 Aurea</option>
+									<option value="32">Lot 32 Aurea</option>
+									<option value="39">Lot 39 Banksia</option>
+									<option value="47">Lot 47 Banksia</option>
+									<option value="48">Lot 48 Banksia</option>
+									<option value="55">Lot 55 Beckwith</option>
+									<option value="56">Lot 56 Beckwith</option>
+									<option value="61">Lot 61 Beckwith</option>
+									<option value="62">Lot 62 Beckwith</option>
+									<option value="65">Lot 65 Beckwith</option>
+									<option value="66">Lot 66 Beckwith</option>
+									<option value="6">Lot 6 Desbrowe</option>
+									<option value="14">Lot 14 Desbrowe</option>
+									<option value="15">Lot 15 Desbrowe</option>
+									<option value="22">Lot 22 Desbrowe</option>
+									<option value="23">Lot 23 Desbrowe</option>
+									<option value="31">Lot 31 Desbrowe</option>
+									<option value="41">Lot 41 Ellis</option>
+									<option value="42">Lot 42 Ellis</option>
+									<option value="45">Lot 45 Ellis</option>
+									<option value="46">Lot 46 Ellis</option>
+									<option value="51">Lot 51 Ellis</option>
+									<option value="52">Lot 52 Ellis</option>
+									<option value="4">Lot 4 Frater</option>
+									<option value="33">Lot 33 Frater</option>
+									<option value="59">Lot 59 Grevillea Type A</option>
+									<option value="60">Lot 60 Grevillea Type A</option>
+									<option value="68">Lot 68 Grevillea Type B</option>
+									<option value="70">Lot 70 Iris Type A</option>
+									<option value="63">Lot 63 Iris Type B</option>
+									<option value="43">Lot 43 Ixodia Type A</option>
+									<option value="53">Lot 53 Ixodia Type A</option>
+									<option value="54">Lot 54 Ixodia Type B</option>
+									<option value="64">Lot 64 Ixodia Type B</option>
+									<option value="2">Lot 2 Napier</option>
+									<option value="3">Lot 3 Napier</option>
+									<option value="7">Lot 7 Napier</option>
+									<option value="10">Lot 10 Napier</option>
+									<option value="11">Lot 11 Napier</option>
+									<option value="16">Lot 16 Napier</option>
+									<option value="17">Lot 17 Napier</option>
+									<option value="20">Lot 20 Napier</option>
+									<option value="21">Lot 21 Napier</option>
+									<option value="26">Lot 26 Napier</option>
+									<option value="27">Lot 27 Napier</option>
+									<option value="30">Lot 30 Napier</option>
+									<option value="34">Lot 34 Napier</option>
+									<option value="35">Lot 35 Napier</option>
+									<option value="9">Lot 9 Stones</option>
+									<option value="28">Lot 28 Stones</option>
+									<option value="57">Lot 57 Violet Type A</option>
+									<option value="58">Lot 58 Violet Type A</option>
+									<option value="67">Lot 67 Violet Type B</option>
+									<option value="69">Lot 69 Violet Type B</option>
+									<option value="38">Lot 38 Waller</option>
+									<option value="40">Lot 40 Waller</option>
+									<option value="49">Lot 49 Waller</option>
+									<option value="50">Lot 50 Waller</option>
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="product2" class="c-input__label">Select product</label>
+								<select name="product2" id="product1" class="c-input__input" required="">
+									<option value=""></option>
+									<option value="1">Lot 1 Aster</option>
+									<option value="8">Lot 8 Aster</option>
+									<option value="18">Lot 18 Aster</option>
+									<option value="19">Lot 19 Aster</option>
+									<option value="29">Lot 29 Aster</option>
+									<option value="36">Lot 36 Aster</option>
+									<option value="37">Lot 37 Astilbe</option>
+									<option value="44">Lot 44 Astilbe</option>
+									<option value="5">Lot 5 Aurea</option>
+									<option value="12">Lot 12 Aurea</option>
+									<option value="13">Lot 13 Aurea</option>
+									<option value="24">Lot 24 Aurea</option>
+									<option value="25">Lot 25 Aurea</option>
+									<option value="32">Lot 32 Aurea</option>
+									<option value="39">Lot 39 Banksia</option>
+									<option value="47">Lot 47 Banksia</option>
+									<option value="48">Lot 48 Banksia</option>
+									<option value="55">Lot 55 Beckwith</option>
+									<option value="56">Lot 56 Beckwith</option>
+									<option value="61">Lot 61 Beckwith</option>
+									<option value="62">Lot 62 Beckwith</option>
+									<option value="65">Lot 65 Beckwith</option>
+									<option value="66">Lot 66 Beckwith</option>
+									<option value="6">Lot 6 Desbrowe</option>
+									<option value="14">Lot 14 Desbrowe</option>
+									<option value="15">Lot 15 Desbrowe</option>
+									<option value="22">Lot 22 Desbrowe</option>
+									<option value="23">Lot 23 Desbrowe</option>
+									<option value="31">Lot 31 Desbrowe</option>
+									<option value="41">Lot 41 Ellis</option>
+									<option value="42">Lot 42 Ellis</option>
+									<option value="45">Lot 45 Ellis</option>
+									<option value="46">Lot 46 Ellis</option>
+									<option value="51">Lot 51 Ellis</option>
+									<option value="52">Lot 52 Ellis</option>
+									<option value="4">Lot 4 Frater</option>
+									<option value="33">Lot 33 Frater</option>
+									<option value="59">Lot 59 Grevillea Type A</option>
+									<option value="60">Lot 60 Grevillea Type A</option>
+									<option value="68">Lot 68 Grevillea Type B</option>
+									<option value="70">Lot 70 Iris Type A</option>
+									<option value="63">Lot 63 Iris Type B</option>
+									<option value="43">Lot 43 Ixodia Type A</option>
+									<option value="53">Lot 53 Ixodia Type A</option>
+									<option value="54">Lot 54 Ixodia Type B</option>
+									<option value="64">Lot 64 Ixodia Type B</option>
+									<option value="2">Lot 2 Napier</option>
+									<option value="3">Lot 3 Napier</option>
+									<option value="7">Lot 7 Napier</option>
+									<option value="10">Lot 10 Napier</option>
+									<option value="11">Lot 11 Napier</option>
+									<option value="16">Lot 16 Napier</option>
+									<option value="17">Lot 17 Napier</option>
+									<option value="20">Lot 20 Napier</option>
+									<option value="21">Lot 21 Napier</option>
+									<option value="26">Lot 26 Napier</option>
+									<option value="27">Lot 27 Napier</option>
+									<option value="30">Lot 30 Napier</option>
+									<option value="34">Lot 34 Napier</option>
+									<option value="35">Lot 35 Napier</option>
+									<option value="9">Lot 9 Stones</option>
+									<option value="28">Lot 28 Stones</option>
+									<option value="57">Lot 57 Violet Type A</option>
+									<option value="58">Lot 58 Violet Type A</option>
+									<option value="67">Lot 67 Violet Type B</option>
+									<option value="69">Lot 69 Violet Type B</option>
+									<option value="38">Lot 38 Waller</option>
+									<option value="40">Lot 40 Waller</option>
+									<option value="49">Lot 49 Waller</option>
+									<option value="50">Lot 50 Waller</option>
+
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="p-eoi-form__field">
+							<div class="c-input">
+								<label for="product3" class="c-input__label">Select product</label>
+								<select name="product3" id="product1" class="c-input__input" required="">
+									<option value=""></option>
+									<option value="1">Lot 1 Aster</option>
+									<option value="8">Lot 8 Aster</option>
+									<option value="18">Lot 18 Aster</option>
+									<option value="19">Lot 19 Aster</option>
+									<option value="29">Lot 29 Aster</option>
+									<option value="36">Lot 36 Aster</option>
+									<option value="37">Lot 37 Astilbe</option>
+									<option value="44">Lot 44 Astilbe</option>
+									<option value="5">Lot 5 Aurea</option>
+									<option value="12">Lot 12 Aurea</option>
+									<option value="13">Lot 13 Aurea</option>
+									<option value="24">Lot 24 Aurea</option>
+									<option value="25">Lot 25 Aurea</option>
+									<option value="32">Lot 32 Aurea</option>
+									<option value="39">Lot 39 Banksia</option>
+									<option value="47">Lot 47 Banksia</option>
+									<option value="48">Lot 48 Banksia</option>
+									<option value="55">Lot 55 Beckwith</option>
+									<option value="56">Lot 56 Beckwith</option>
+									<option value="61">Lot 61 Beckwith</option>
+									<option value="62">Lot 62 Beckwith</option>
+									<option value="65">Lot 65 Beckwith</option>
+									<option value="66">Lot 66 Beckwith</option>
+									<option value="6">Lot 6 Desbrowe</option>
+									<option value="14">Lot 14 Desbrowe</option>
+									<option value="15">Lot 15 Desbrowe</option>
+									<option value="22">Lot 22 Desbrowe</option>
+									<option value="23">Lot 23 Desbrowe</option>
+									<option value="31">Lot 31 Desbrowe</option>
+									<option value="41">Lot 41 Ellis</option>
+									<option value="42">Lot 42 Ellis</option>
+									<option value="45">Lot 45 Ellis</option>
+									<option value="46">Lot 46 Ellis</option>
+									<option value="51">Lot 51 Ellis</option>
+									<option value="52">Lot 52 Ellis</option>
+									<option value="4">Lot 4 Frater</option>
+									<option value="33">Lot 33 Frater</option>
+									<option value="59">Lot 59 Grevillea Type A</option>
+									<option value="60">Lot 60 Grevillea Type A</option>
+									<option value="68">Lot 68 Grevillea Type B</option>
+									<option value="70">Lot 70 Iris Type A</option>
+									<option value="63">Lot 63 Iris Type B</option>
+									<option value="43">Lot 43 Ixodia Type A</option>
+									<option value="53">Lot 53 Ixodia Type A</option>
+									<option value="54">Lot 54 Ixodia Type B</option>
+									<option value="64">Lot 64 Ixodia Type B</option>
+									<option value="2">Lot 2 Napier</option>
+									<option value="3">Lot 3 Napier</option>
+									<option value="7">Lot 7 Napier</option>
+									<option value="10">Lot 10 Napier</option>
+									<option value="11">Lot 11 Napier</option>
+									<option value="16">Lot 16 Napier</option>
+									<option value="17">Lot 17 Napier</option>
+									<option value="20">Lot 20 Napier</option>
+									<option value="21">Lot 21 Napier</option>
+									<option value="26">Lot 26 Napier</option>
+									<option value="27">Lot 27 Napier</option>
+									<option value="30">Lot 30 Napier</option>
+									<option value="34">Lot 34 Napier</option>
+									<option value="35">Lot 35 Napier</option>
+									<option value="9">Lot 9 Stones</option>
+									<option value="28">Lot 28 Stones</option>
+									<option value="57">Lot 57 Violet Type A</option>
+									<option value="58">Lot 58 Violet Type A</option>
+									<option value="67">Lot 67 Violet Type B</option>
+									<option value="69">Lot 69 Violet Type B</option>
+									<option value="38">Lot 38 Waller</option>
+									<option value="40">Lot 40 Waller</option>
+									<option value="49">Lot 49 Waller</option>
+									<option value="50">Lot 50 Waller</option>
+								</select>
+								<div class="c-input__arrow">
+									<svg class="icon c-input__arrow-icon">
+										<use xlink:href="/images/icons.svg#select-angle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div><!-- end column -->
+				</div><!-- end section -->
+				<div class="p-eoi-form__submit">
+					<input type="submit" class="p-form__submit" value="Submit">
+				</div>
+
+				<div class="p-eoi-form__notes">
+					<span>Deposit Confirmation</span><br>
+					After submitting this form you must send a copy of the EOI Fee payment receipt by email to <br><a href="mailto:yarrabend@glenvill.com.au">yarrabend@glenvill.com.au</a> by no later than 5.00pm (AEST) on Tuesday 9 August 2016. 
+				</div>
+			</form>
+		</div>
+		@@include('footer-scripts.html')
+	</body>
+</html>
