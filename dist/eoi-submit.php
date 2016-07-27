@@ -1,7 +1,7 @@
 <?php
 // check for valid email
 // otherwise bounce
-if(filter_var($_POST['applicant1-email'], FILTER_VALIDATE_EMAIL)) {
+if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 
 	//connect to db
 	$mysqli = new mysqli("localhost", "yarrabend", "VpZYk7UXmW4xViwi", "yarrabend", 8889);
