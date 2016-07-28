@@ -21,6 +21,10 @@
 		outline: none;
 		padding: 0;
 
+		option {
+			color: black;
+		}
+
 		&.parsley-error {
 			border-color: red;
 		}
