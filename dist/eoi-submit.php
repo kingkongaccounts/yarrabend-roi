@@ -3,7 +3,7 @@
 // otherwise bounce
 if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 
-	//connect to db
+	// //connect to db
 	$mysqli = new mysqli("localhost", "yarrabend", "VpZYk7UXmW4xViwi", "yarrabend", 8889);
 
 	if ($mysqli->connect_errno) {
@@ -42,40 +42,38 @@ if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 
 	$mysqli->query($query);
 
+	require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-	// send email
-	$to = 'jolane.synott@cornwell.com.au';
-	$subject = "New EOI from YarraBend.";
-	$headers = 'From: no-reply@yarrabend.com.au' . "\r\n";
-	$message = "
-applicant1_title: $applicant1_title \n
-applicant1_first_name: $applicant1_first_name \n
-applicant1_last_name: $applicant1_last_name \n
-applicant1_email: $applicant1_email \n
-applicant1_phone: $applicant1_phone \n
-applicant1_street: $applicant1_street \n
-applicant1_city: $applicant1_city \n
-applicant1_postcode: $applicant1_postcode \n
-applicant1_state: $applicant1_state \n
-applicant1_country: $applicant1_country \n
-applicant2: $applicant2 \n
-applicant2_first_name: $applicant2_first_name \n
-applicant2_last_name: $applicant2_last_name \n
-applicant2_email: $applicant2_email \n
-applicant2_phone: $applicant2_phone \n
-applicant2_street: $applicant2_street \n
-applicant2_city: $applicant2_city \n
-applicant2_postcode: $applicant2_postcode \n
-applicant2_state: $applicant2_state \n
-applicant2_country: $applicant2_country \n
-identification: $identification \n
-product1: $product1 \n
-product2: $product2 \n
-product3: $product3 \n
-";
+	$mail = new PHPMailer;
 
-	mail($to, $subject, $message, $headers);
+	//$mail->SMTPDebug  = 2;
+	$mail->isSMTP();   
+	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'cornwell.developers@gmail.com';                 // SMTP username
+	$mail->Password = 'LzX-SHq-FRF-e33';                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;  
 
+	$mail->setFrom('jolane.synott@cornwell.com.au', 'Mailer');
+	$mail->addAddress('jolane@jolane.net', 'Jolane Synott');
+	$mail->isHTML(false);
+
+	$mail->Subject = 'New YarraBend EOI';
+
+	$body = '';
+	foeach($_POST as $key => $val) {
+		$body =  $body.$key.': '.$val."\n";	
+	}
+	$mail->Body = $body;
+
+
+	if(!$mail->send()) {
+	    echo 'Message could not be sent.';
+	    echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+	    echo 'Message has been sent';
+	}
 
 	header("location: eoi-thankyou.html");
 	exit();
