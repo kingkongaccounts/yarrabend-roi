@@ -61,12 +61,9 @@ if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 
 	$mail->Subject = 'New YarraBend EOI';
 
-	$body = '';
-	foeach($_POST as $key => $val) {
-		$body =  $body.$key.': '.$val."\n";	
+	foreach($_POST as $key => $val) {
+		$mail->Body .=  $key.': '.$val."\n";	
 	}
-	$mail->Body = $body;
-
 
 	if(!$mail->send()) {
 	    echo 'Message could not be sent.';
