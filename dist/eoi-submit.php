@@ -44,35 +44,28 @@ if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 		$mysqli->query($query);
 	}
 
-	// require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+	require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-	// $mail = new PHPMailer;
+	$mail = new PHPMailer;
 
-	// $mail->SMTPDebug  = 2;
-	// $mail->isSMTP();   
-	// $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-	// $mail->SMTPAuth = true;                               // Enable SMTP authentication
-	// $mail->Username = 'cornwell.developers@gmail.com';                 // SMTP username
-	// $mail->Password = 'LzX-SHq-FRF-e33';                           // SMTP password
-	// $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	// $mail->Port = 587;  
+	$mail->SMTPDebug  = 2;
 
-	// $mail->setFrom('jolane.synott@cornwell.com.au', 'Mailer');
-	// $mail->addAddress('jolane@jolane.net', 'Jolane Synott');
-	// $mail->isHTML(false);
+	$mail->setFrom('no-reply@yarrabend.com.au', 'YarraBend EOI');
+	$mail->addAddress('jolane@jolane.net', 'Jolane Synott');
+	$mail->isHTML(false);
 
-	// $mail->Subject = 'New YarraBend EOI';
+	$mail->Subject = 'New YarraBend EOI';
 
-	// foreach($_POST as $key => $val) {
-	// 	$mail->Body .=  $key.': '.$val."\n";	
-	// }
+	foreach($_POST as $key => $val) {
+		$mail->Body .=  $key.': '.$val."\n";	
+	}
 
-	// if(!$mail->send()) {
-	//     echo 'Message could not be sent.';
-	//     echo 'Mailer Error: ' . $mail->ErrorInfo;
-	// } else {
-	//     echo 'Message has been sent';
-	// }
+	if(!$mail->send()) {
+	    echo 'Message could not be sent.';
+	    echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+	    echo 'Message has been sent';
+	}
 
 	header("location: eoi-thankyou.html");
 	exit();
