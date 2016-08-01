@@ -23,6 +23,7 @@ if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 	    $applicant1_state = $mysqli->real_escape_string($_POST['applicant1_state']);
 	    $applicant1_country = $mysqli->real_escape_string($_POST['applicant1_country']);
 	    $applicant2 = $mysqli->real_escape_string($_POST['applicant2']);
+	    $applicant2_title = $mysqli->real_escape_string($_POST['applicant2_title']);
 	    $applicant2_first_name = $mysqli->real_escape_string($_POST['applicant2_first_name']);
 	    $applicant2_last_name = $mysqli->real_escape_string($_POST['applicant2_last_name']);
 	    $applicant2_email = $mysqli->real_escape_string($_POST['applicant2_email']);
@@ -38,8 +39,8 @@ if(filter_var($_POST['applicant1_email'], FILTER_VALIDATE_EMAIL)) {
 	    $product3 = $mysqli->real_escape_string($_POST['product3']);
 
 
-		$query  = "INSERT INTO `eoi` (`applicant1_title`, `applicant1_first_name`, `applicant1_last_name`, `applicant1_email`, `applicant1_phone`, `applicant1_street`, `applicant1_city`, `applicant1_postcode`, `applicant1_state`, `applicant1_country`, `applicant2`, `applicant2_first_name`, `applicant2_last_name`, `applicant2_email`, `applicant2_phone`, `applicant2_street`, `applicant2_city`, `applicant2_postcode`, `applicant2_state`, `applicant2_country`, `identification`, `product1`, `product2`, `product3`, `timestamp`)
-					VALUES ('$applicant1', '$applicant1_first_name', '$applicant1_last_name', '$applicant1_email', '$applicant1_phone', '$applicant1_street', '$applicant1_city', '$applicant1_postcode', '$applicant1_state', '$applicant1_country', '$on', '$applicant2_first_name', '$applicant2_last_name', '$applicant2_email', '$applicant2_phone', '$applicant2_street', '$applicant2_city', '$applicant2_postcode', '$applicant2_state', '$applicant2_country', '$identification', '$product1', '$product2', '$product3', NOW())";
+		$query  = "INSERT INTO `eoi` (`applicant1_title`, `applicant1_first_name`, `applicant1_last_name`, `applicant1_email`, `applicant1_phone`, `applicant1_street`, `applicant1_city`, `applicant1_postcode`, `applicant1_state`, `applicant1_country`, `applicant2`, `applicant2_first_name`, `applicant2_last_name`, `applicant2_email`, `applicant2_phone`, `applicant2_street`, `applicant2_city`, `applicant2_postcode`, `applicant2_state`, `applicant2_country`, `identification`, `product1`, `product2`, `product3`, `timestamp`, `applicant2_title`)
+					VALUES ('$applicant1_title', '$applicant1_first_name', '$applicant1_last_name', '$applicant1_email', '$applicant1_phone', '$applicant1_street', '$applicant1_city', '$applicant1_postcode', '$applicant1_state', '$applicant1_country', '$on', '$applicant2_first_name', '$applicant2_last_name', '$applicant2_email', '$applicant2_phone', '$applicant2_street', '$applicant2_city', '$applicant2_postcode', '$applicant2_state', '$applicant2_country', '$identification', '$product1', '$product2', '$product3', NOW(), '$applicant2_title')";
 
 		$mysqli->query($query);
 	}
