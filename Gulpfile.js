@@ -10,6 +10,9 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var fileinclude = require('gulp-file-include');
 
+// critical path
+var critical = require('critical');
+
 
 // SVG
 svgmin = require('gulp-svgmin');
@@ -99,6 +102,20 @@ gulp.task('html', function() {
 		.pipe(gulp.dest('dist'));
 });
 
+gulp.task('critical', ['html'], function(cb) {
+	critical.generate({
+        inline: true,
+        base: 'dist/',
+        src: 'index.html',
+        css: 'dist/css/main.css',
+        dest: 'dist/index.html',
+        minify: true,
+        width: 1300,
+        height: 900,
+        timeout: 30000
+    });
+})
+
 gulp.task('fonts', function() {
 	gulp.src('app/fonts/*')
 		.pipe(gulp.dest('dist/fonts'));
@@ -109,7 +126,7 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('build', ['html', 'scss:build', 'js:build', 'js:plugins', 'svg', 'fonts', 'images']);
+gulp.task('build', ['critical', 'scss:build', 'js:build', 'js:plugins', 'svg', 'fonts', 'images']);
 
 
 gulp.task('default', ['html', 'scss', 'js', 'js:plugins', 'svg', 'fonts', 'images'], function() {

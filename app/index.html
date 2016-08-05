@@ -26,7 +26,9 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		@@include('header.html')
+		@@include('header.html', {
+			"nav" : true
+		})
 
 		<main>
 
@@ -34,101 +36,9 @@
 
 			@@include('sections/masterplan.html')
 
-			<section>
-				<div class="c-synced-slidehow">
-					<div class="c-synced-slidehow__container cycle-slideshow"
-						data-cycle-slides="> .c-synced-slidehow__slide"
-						data-cycle-pager="> .c-synced-slidehow__pager"
-						data-cycle-pager-template="<span class='c-synced-slidehow__pager-dot'></span>"
-						data-cycle-pager-active-class="is-active"
-						data-cycle-timeout="9000"
-						data-cycle-swipe="true"
-					>
+			@@include('sections/area.html')
 
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/about01.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Lush green spaces.
-								</h4>
-								<p>
-									YarraBend is surrounded by Darebin Parklands and Yarra Bend Park, with views over endless canopies of native trees. Here you can lose yourself walking in the natural bushland or jogging past the area’s last remaining orchards.
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/future-focused.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Future focused.
-								</h4>
-								<p>
-									With a strong focus around sustainability and design, at YarraBend innovation leads the way ensuring its future-proofed. With latest technology like PV energy and TESLA Powerwalls to meticulous horticultural designs and the latest in street design, YarraBend will be a green and sustainable place that exists in harmony with the natural environment
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/knowledge.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Local knowledge.
-								</h4>
-								<p>
-									As well as offering its own modern primary school, YarraBend puts you within easy reach of the highest concentration of well-regarded educational institutions in Australia, from kindergartens through to private school.
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/local-flavour.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Local flavour.
-								</h4>
-								<p>
-									YarraBend will be a new Melbourne food destination known for its acclaimed chefs and on-trend dining sensations. A world of flavours and a variety of dining styles will be curated by an industry icon to create a new and exit.
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/arts.jpg);">
-								<span class="c-synced-slidehow__caption">Heidie Museum</span>
-							</div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Arts & culture.
-								</h4>
-								<p>
-									Art will be a major focus in the design of YarraBend, with an Art and Design Precinct that celebrates local and international artists through exhibitions, workshops and interactive pop-ups.
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/shopping-destination.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									Shopping destination.
-								</h4>
-								<p>
-									With everything from major supermarkets to chic designer boutiques, YarraBend will cater to every need of its new and diverse community. Local fashion brands high-end labels, gift shops and florists will all create a village atmosphere in the heart of YarraBend.
-								</p>
-							</div>
-						</div>
 
-						<div class="c-synced-slidehow__slide">
-							<div class="c-synced-slidehow__img" style="background-image: url(images/on-the-edge-of-kew.jpg);"></div>
-							<div class="c-synced-slidehow__copy">
-								<h4 class="c-synced-slidehow__heading">
-									On the edge of Kew.
-								</h4>
-								<p>
-									YarraBend is conveniently located only 450m from Alphington Railway Station, with platforms shaded by heritage listed trees Red Gums that pre-date European settlement. Fairfield Railway Station, adjacent to charming shopping village is also less than 15 minutes away by foot.
-								</p>
-							</div>
-						</div>
-						<div class="c-synced-slidehow__pager"></div>
-					</div>
-				</div>
-			</section>
 			<section>
 				<div class="c-big-text">
 
