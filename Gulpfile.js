@@ -44,6 +44,14 @@ gulp.task('scss', function() {
 		.pipe(browserSync.stream());
 });
 
+gulp.task('scss:build', function() {
+	gulp.src('app/scss/main.scss')
+		.pipe(sassGlob())
+		.pipe(sass().on('error', sass.logError))
+		.pipe(postcss(processors))
+		.pipe(gulp.dest('dist/css'))
+});
+
 // SVG task
 gulp.task('svg', function() {
 
@@ -93,6 +101,8 @@ gulp.task('images', function() {
 	gulp.src('app/images/*')
 		.pipe(gulp.dest('dist/images'));
 });
+
+gulp.task('build', ['html', 'scss:build', 'js', 'js:plugins', 'svg', 'fonts', 'images']);
 
 
 gulp.task('default', ['html', 'scss', 'js', 'js:plugins', 'svg', 'fonts', 'images'], function() {
